@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Quiz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="math.css">
+</head>
+<body>
+<h4 class="nametext" id="P1Name"></h4> <span class="nametext" id="P1Score"></span>
+<h4 class="nametext" id="P2Name"></h4> <span class="nametext" id="P2Score"></span>
+<div class="container">
+	<center>
+		<h2 style="color: white;">Math Quiz</h2>
+		<h3 class="currenttext">Current Asker:</h3> <h3 class="currenttext" id="Asker Turn"></h3>
+		<h3 class="currenttext">Current Answerer:</h3> <h3 class="currenttext" id="Answerer Turn"></h3>
+
+		<br>
+		<br>
+
+		<label>Answerer: <b style="color: rgb(0, 255, 76)">Multiply the two numbers in the answer box in the middle of the screen.</b></label>
+
+		<br>
+
+		<div id="output">
+			<h3 id="problem_text">No Question</h3>
+			<span> Answer:
+			<input type="text" placeholder="Enter your answer here." id="answer_textbox"> </span>
+			<br>
+			<button class="btn btn-info" id="check_button">Check</button>
+		</div>
+		<br>
+		<br>
+		<h3>1st Number</h3>
+		<input type="text" id="number1" placeholder="Enter the 1st number here.">
+	</center>
+</div>
+
+<script src="math_page.js"></script>
+</body>
+</html>
